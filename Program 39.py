@@ -1,5 +1,8 @@
-def change_sring(str1):
-      return str1[0:1]+str1[-1:] + str1[2:-1] + str1[1:2]
-	  
-print(change_sring('abcd'))
-print(change_sring('12345'))
+def even_values_string(str):
+  result = "" 
+  for i in range(len(str)):
+    if i % 2!= 0:
+      result = result + str[i]
+  return result
+print(even_values_string('abcdef'))
+print(even_values_string('python'))
